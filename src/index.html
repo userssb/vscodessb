@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+
+    <script src="https://unpkg.com/react@18.3.1/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        const rootElement=document.getElementById('root');
+    
+        const Welcome=(props)=>{
+            const {name, greet}=props;
+            return <h1 className='greeting'>{greet}, {name}....!</h1>}
+        const Component=()=>(
+            <div>
+                <Welcome name='ssb' greet='Hello'/>
+                <Welcome name='Sreekanth Babu' greet='Hello'/>
+            </div>
+        )
+        ReactDOM.render(<Component/>,rootElement);
+    </script>
+</body>
+</html>

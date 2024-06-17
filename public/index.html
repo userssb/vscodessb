@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>React App</title>
+    <script src="https://unpkg.com/react@18.3.1/umd/react.development.js"></script>
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.development.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module">
+      const rootElement=document.getElementById("root");
+      // const eleProps={className:'greet',children:'Hello Sreekanth'};
+      // const element=React.createElement('h1',eleProps);
+      const element=React.createElement("h1",{className:'greet'},"Hello World...!");
+      ReactDOM.render(element,rootElement);
+    </script>
+  </body>
+</html>
